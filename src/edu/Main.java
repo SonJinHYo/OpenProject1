@@ -3,6 +3,7 @@
  */
 package edu;
 
+import java.util.Scanner;
 
 /**
  * @author 손진효
@@ -19,10 +20,14 @@ public class Main {
 		int firstNo,secondNo;
 		int sum;
 		
-		//변수 입력
-		firstNo = 11;
+		//변수 입력받기
+		Scanner scan = new Scanner(System.in);
+		System.out.print("첫번째 수를 입력하시오 : ");
+		firstNo = scan.nextInt();
 		
-		secondNo = 23;
+		System.out.print("두번째 수를 입력하시오 : ");
+		secondNo = scan.nextInt();
+		
 		
 		//합계내기
 		sum = firstNo + secondNo;
